@@ -3,8 +3,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 65px;
+    margin-bottom: 120px;
 
-    
 }
 
 .home__inner {
@@ -30,7 +30,7 @@
 
 .home__text {
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 30px;
     color: #fff;
 }
 
@@ -41,22 +41,42 @@
     display: flex;
     gap: 86px;
     padding: 46px;
+    justify-content: center;
+    align-items: center;
 }
 
-.online__block{
+.online__block {
     width: 300px;
-    height: 180px;
     background-color: var(--accent);
     border-radius: 10px;
+    text-align: center;
+    padding: 48px 20px;
 }
 
-.online__block--active{
+.online__block--active {
     width: 358px;
     height: 75px;
+    border-radius: 20px;
+    font-size: 20px;
+    display: flex;
+    padding: 30px 30px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-weight: 500;
 }
 
-.online__text{
+.online__text {
     font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: 'Poppins' sans-serif;
+    line-height: 1;
 }
 
-.online__num{}
+.online__num {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1;
+}
