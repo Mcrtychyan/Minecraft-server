@@ -1,3 +1,7 @@
+.sale{
+    margin-bottom: 69px;
+}
+
 .sale__filters {
     background-color: var(--dark-gray);
     padding: 14px 12px;
@@ -83,3 +87,4 @@ margin-bottom: 24px;
     padding: 17px;
     border-radius: 15px;
 }
+
