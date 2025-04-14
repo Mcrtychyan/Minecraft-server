@@ -1,6 +1,4 @@
-.sale__cards {
-
-
+.sale__filters {
     background-color: var(--dark-gray);
     padding: 14px 12px;
     border-radius: 20px;
@@ -9,11 +7,79 @@
     max-width: max-content;
     border-radius: 20px;
     gap: 10px;
+    margin-bottom: 78px;
 }
 
 .sale__btn {
-    width: 327px;
+    width: 100%;
+    max-width: 330px;
     background-color: var(--accent);
     border-radius: 10px;
     text-align: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 18px 90px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.sale__text span {
+    color: var(--lime-green);
+}
+
+.sale__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 59px 53px;
+}
+
+.sale__card {
+    padding: 30px 30px 25px;
+    border-radius: 10px;
+    background-color: var(--dark-gray);
+}
+
+.sale__title {
+margin-bottom: 24px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.sale__price {
+
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--lime-green);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    margin-bottom: 33px;
+}
+
+.sale__text {
+
+    color: #fff;
+    margin-bottom: 26px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.detailed__btn {
+
+    color: #C9C9C9;
+    font-weight: 700;
+    font-family: 'Inter';
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+.sale__buy {
+    background-color: var(--soft-green);
+    color: #fff;
+    width: 100%;
+    padding: 17px;
+    border-radius: 15px;
 }
