@@ -1,4 +1,4 @@
-.sale{
+.sale {
     margin-bottom: 69px;
 }
 
@@ -26,6 +26,12 @@
     padding: 18px 90px;
     align-items: center;
     font-weight: bold;
+    transition: 0.5s;
+}
+
+.sale__btn:hover {
+    background-color: var(--soft-green);
+    color: white;
 }
 
 .sale__text span {
@@ -45,7 +51,7 @@
 }
 
 .sale__title {
-margin-bottom: 24px;
+    margin-bottom: 24px;
     font-size: 32px;
     font-weight: bold;
     color: #fff;
@@ -86,5 +92,30 @@ margin-bottom: 24px;
     width: 100%;
     padding: 17px;
     border-radius: 15px;
+    transition: 0.5s;
 }
 
+.sale__buy:hover {
+    background-color: var(--pale-lime);
+    color: black;
+}
+
+#coins-range .range-slider__thumb[data-lower] {
+    width: 0;
+}
+
+#coins-range .range-slider__range {
+    border-radius: 6px;
+}
+
+.range-slider .range-slider__thumb {
+    background-color: black;
+}
+
+.range-slider .range-slider__range {
+    background-color: black;
+}
+
+.range-slider{
+background: #fff;
+}

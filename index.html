@@ -94,7 +94,7 @@
                 <ul class="sale__list">
                     <li class="sale__card">
                         <h2 class="sale__title">Ranger</h2>
-                        <p class="sale__price">39₽  <img src="images/icons/foto.svg"></p>
+                        <p class="sale__price">39₽ <img src="images/icons/foto.svg"></p>
                         <p class="sale__text">| Сменить личное время - <span>/ptime</span></p>
                         <p class="sale__text">| Открыть верстак - <span>/workbench</span></p>
                         <p class="sale__text">| Открыть эндер-сундук - <span>/ec</span></p>
@@ -103,7 +103,7 @@
                     </li>
                     <li class="sale__card">
                         <h2 class="sale__title">Ranger</h2>
-                        <p class="sale__price">39₽  <img src="images/icons/foto.svg"></p>
+                        <p class="sale__price">39₽ <img src="images/icons/foto.svg"></p>
                         <p class="sale__text">| Сменить личное время - <span>/ptime</span></p>
                         <p class="sale__text">| Открыть верстак - <span>/workbench</span></p>
                         <p class="sale__text">| Открыть эндер-сундук - <span>/ec</span></p>
@@ -112,7 +112,7 @@
                     </li>
                     <li class="sale__card">
                         <h2 class="sale__title">Ranger</h2>
-                        <p class="sale__price">39₽  <img src="images/icons/foto.svg"></p>
+                        <p class="sale__price">39₽ <img src="images/icons/foto.svg"></p>
                         <p class="sale__text">| Сменить личное время - <span>/ptime</span></p>
                         <p class="sale__text">| Открыть верстак - <span>/workbench</span></p>
                         <p class="sale__text">| Открыть эндер-сундук - <span>/ec</span></p>
@@ -121,7 +121,7 @@
                     </li>
                     <li class="sale__card">
                         <h2 class="sale__title">Ranger</h2>
-                        <p class="sale__price">39₽  <img src="images/icons/foto.svg"></p>
+                        <p class="sale__price">39₽ <img src="images/icons/foto.svg"></p>
                         <p class="sale__text">| Сменить личное время - <span>/ptime</span></p>
                         <p class="sale__text">| Открыть верстак - <span>/workbench</span></p>
                         <p class="sale__text">| Открыть эндер-сундук - <span>/ec</span></p>
@@ -130,7 +130,7 @@
                     </li>
                     <li class="sale__card">
                         <h2 class="sale__title">Ranger</h2>
-                        <p class="sale__price">39₽  <img src="images/icons/foto.svg"></p>
+                        <p class="sale__price">39₽ <img src="images/icons/foto.svg"></p>
                         <p class="sale__text">| Сменить личное время - <span>/ptime</span></p>
                         <p class="sale__text">| Открыть верстак - <span>/workbench</span></p>
                         <p class="sale__text">| Открыть эндер-сундук - <span>/ec</span></p>
@@ -139,7 +139,7 @@
                     </li>
                     <li class="sale__card">
                         <h2 class="sale__title">Ranger</h2>
-                        <p class="sale__price">39₽  <img src="images/icons/foto.svg"></p>
+                        <p class="sale__price">39₽ <img src="images/icons/foto.svg"></p>
                         <p class="sale__text">| Сменить личное время - <span>/ptime</span></p>
                         <p class="sale__text">| Открыть верстак - <span>/workbench</span></p>
                         <p class="sale__text">| Открыть эндер-сундук - <span>/ec</span></p>
@@ -151,13 +151,45 @@
         <section class="coins">
             <div class="container">
                 <div class="coins__content">
-                    <img src="images/icons/money.svg">
-                    <p class="coins__title">Покупка игровой валюты</p>
-                    <p class="coins__subtitle">Количество коинов</p>
+                    <img class="coins__money" src="images/icons/money.svg">
+                    <div class="coins__left">           
+                        <h3 class="coins__title">Покупка игровой валюты</h3>
+                        <p class="coins__subtitle">Количество коинов</p>
+                        <div class="coins__range" id="coins-range"></div>
+                        <div class="coins__coins">
+                            <div class="coins__information">
+                                <p class ="coins__textcontent">Отдаете</p>
+                                <p class="coins__salebuy">1000р</p>
+                            </div>
+                            <div class="coins__information">
+                                <p class ="coins__textcontent">Получаете</p>
+                                <p class="coins__salebuy">12000р</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coins__right">
+                        <button class="coins__buy">
+                            Хочу купить
+                            <img src="images/icons/strelka.svg">
+                        </button>
+                        <p class="coins__info">Совершая оплату, вы соглашаетесь со всеми условиями <span>пользовательского соглашения</span></p>                     
+                    </div>
+                    
+                   
                 </div>
             </div>
         </section>
     </main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/range-slider-input@2.4/dist/rangeslider.umd.min.js"></script>
+<script>
+    const numberInfo = document.getElementById('number');
+
+    rangeSlider(document.querySelector('#coins-range'), {
+        value: [0, 50],
+        thumbsDisabled: [true, false],
+        rangeSlideDisabled: true
+    })
+</script>
 
 </html>
