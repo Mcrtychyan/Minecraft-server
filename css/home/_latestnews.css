@@ -1,0 +1,43 @@
+.latest-news__title {
+    font-size: 48px;
+    font-family: "Poppins" sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.latest__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px 70px;
+}
+
+.latest__card {
+    background-color: #fff;
+    border-radius: 30px;
+display: flex;
+flex-direction: column;
+}
+
+.latest__image {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.latest__text {
+    text-align: center;
+    padding: 0 67px;
+    margin-bottom: 13px;
+    font-size: 16px;
+}
+
+.latest__btn {
+    display: flex;
+    gap: 5px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #717171;
+   padding-bottom: 7px;
+   margin-top: auto;
+}

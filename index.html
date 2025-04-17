@@ -63,8 +63,11 @@
                         </div>
 
                         <div class="online__block online__block--active">
-                            <p class="online__container">Наш IP: mc.dexland.org</p>
-                            <img src="images/icons/copy.svg">
+                            <p  class="online__container">Наш IP: <span id="server-ip">mc.dexland.org</span></p>
+                            <button onclick="copyIP()">
+                                <img src="images/icons/copy.svg" alt="copy">
+                            </button>
+                            <span id="copy-msg" class="copy-message">Скопировано!</span>
                         </div>
                         <div class="online__block">
                             <p class="online__text">Рекорд</p>
@@ -152,18 +155,18 @@
             <div class="container">
                 <div class="coins__content">
                     <img class="coins__money" src="images/icons/money.svg">
-                    <div class="coins__left">           
+                    <div class="coins__left">
                         <h3 class="coins__title">Покупка игровой валюты</h3>
                         <p class="coins__subtitle">Количество коинов</p>
                         <div class="coins__range" id="coins-range"></div>
                         <div class="coins__coins">
                             <div class="coins__information">
-                                <p class ="coins__textcontent">Отдаете</p>
-                                <p class="coins__salebuy">1000р</p>
+                                <p class="coins__textcontent">Отдаете</p>
+                                <p class="coins__salebuy" id="pay-amount">1000р</p>
                             </div>
                             <div class="coins__information">
-                                <p class ="coins__textcontent">Получаете</p>
-                                <p class="coins__salebuy">12000р</p>
+                                <p class="coins__textcontent">Получаете</p>
+                                <p class="coins__salebuy" id="receive-amount">2000р</p>
                             </div>
                         </div>
                     </div>
@@ -172,11 +175,102 @@
                             Хочу купить
                             <img src="images/icons/strelka.svg">
                         </button>
-                        <p class="coins__info">Совершая оплату, вы соглашаетесь со всеми условиями <span>пользовательского соглашения</span></p>                     
+                        <p class="coins__info">Совершая оплату, вы соглашаетесь со всеми условиями
+                            <span>пользовательского соглашения</span>
+                        </p>
                     </div>
-                    
-                   
                 </div>
+            </div>
+        </section>
+        <section class="recent-purchases">
+            <div class="container">
+                <h1 class="recent-purchases__title">Последние покупки:</h1>
+                <div class="recent__container">
+                    <ul class="recent__list">
+                        <li class="recent__card">
+                            <img class="recent__image" src="images/chel.png">
+                            <p class="recent__name">plushkin007</p>
+                            <p class="recent__privileg">IMMORTAL</p>
+                        </li>
+                        <li class="recent__card">
+                            <img class="recent__image" src="images/chel.png">
+                            <p class="recent__name">plushkin007</p>
+                            <p class="recent__privileg">IMMORTAL</p>
+                        </li>
+                        <li class="recent__card">
+                            <img class="recent__image" src="images/chel.png">
+                            <p class="recent__name">plushkin007</p>
+                            <p class="recent__privileg">IMMORTAL</p>
+                        </li>
+                        <li class="recent__card">
+                            <img class="recent__image" src="images/chel.png">
+                            <p class="recent__name">plushkin007</p>
+                            <p class="recent__privileg">IMMORTAL</p>
+                        </li>
+                        <li class="recent__card">
+                            <img class="recent__image" src="images/chel.png">
+                            <p class="recent__name">plushkin007</p>
+                            <p class="recent__privileg">IMMORTAL</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-news">
+            <div class="container">
+                <h1 class="latest-news__title">Последние новости:</h1>
+                <ul class="latest__list">
+                    <li class="latest__card">
+                        <img class="latest__image" src="images/1.png">
+                        <p class="latest__text">23 мая в 13:00 по МСК будет проведен вайп всех анархий!</p>
+                        <button class="latest__btn">
+                            Узнать подробнее
+                            <img src="images/icons/right-arrow-svgrepo-com 1.svg">
+                        </button>
+                    </li>
+                    <li class="latest__card">
+                        <img class="latest__image" src="images/2.png">
+                        <p class="latest__text">Игрок построил статую Петра</p>
+                        <button class="latest__btn">
+                            Узнать подробнее
+                            <img src="images/icons/right-arrow-svgrepo-com 1.svg">
+                        </button>
+                    </li>
+                    <li class="latest__card">
+                        <img class="latest__image" src="images/3.png">
+                        <p class="latest__text">23 Февраля была сходка на сервере Фортнокс</p>
+                        <button class="latest__btn">
+                            Узнать подробнее
+                            <img src="images/icons/right-arrow-svgrepo-com 1.svg">
+                        </button>
+                    </li>
+                    <li class="latest__card">
+                        <img class="latest__image" src="images/4.png">
+                        <p class="latest__text">Банда панд, были в этот момент на спавне? 🐼</p>
+                        <button class="latest__btn">
+                            Узнать подробнее
+                            <img src="images/icons/right-arrow-svgrepo-com 1.svg">
+                        </button>
+                    </li>
+                    <li class="latest__card">
+                        <img class="latest__image" src="images/5.png">
+                        <p class="latest__text">Японское кафе 🎋
+                            Построили: Angelll, Agust_D</p>
+                        <button class="latest__btn">
+                            Узнать подробнее
+                            <img src="images/icons/right-arrow-svgrepo-com 1.svg">
+                        </button>
+                    </li>
+                    <li class="latest__card">
+                        <img class="latest__image" src="images/6.png">
+                        <p class="latest__text">Игрок:  partygamestop, построил мопсика</p>
+                        <button class="latest__btn">
+                            Узнать подробнее
+                            <img src="images/icons/right-arrow-svgrepo-com 1.svg">
+                        </button>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
@@ -192,4 +286,31 @@
     })
 </script>
 
+<script>
+    const range = document.querySelector('#coins-range');
+    const payAmount = document.getElementById('pay-amount');
+    const receiveAmount = document.getElementById('receive-amount');
+
+    // Инициализация слайдера
+    const slider = rangeSlider(range, {
+        value: [0, 10], // начальное значение
+        thumbsDisabled: [true, false],
+        rangeSlideDisabled: true,
+        min: 0,
+        max: 50,
+        step: 1,
+        onInput: (value) => {
+            console.log(value); // Выведем значение, чтобы проверить, что оно обновляется
+            const pay = value[1] * 100; // Каждое деление = 100р
+            const receive = pay * 12;   // 1р = 12 коинов
+
+            payAmount.textContent = `${pay}р`;
+            receiveAmount.textContent = `${receive}р`;
+        }
+    });
+
+</script>
+
+<script src="js/index.js"></script>
+    
 </html>

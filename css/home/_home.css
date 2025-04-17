@@ -80,3 +80,28 @@
     font-weight: 500;
     line-height: 1;
 }
+
+.copy-message {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    top: -35px;
+    right: 0;
+    z-index: 100;
+    animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.online__block--active {
+    position: relative;
+    /* остальной стиль... */
+}
