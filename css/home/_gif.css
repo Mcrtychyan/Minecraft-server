@@ -1,0 +1,8 @@
+.gif__content{
+    display: flex;
+    justify-content: center;
+}
+
+.gif{
+    margin-bottom: 80px;
+}
