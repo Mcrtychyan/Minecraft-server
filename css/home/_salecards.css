@@ -41,7 +41,7 @@
 .sale__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 59px 53px;
+    grid-gap: 60px 50px;
 }
 
 .sale__card {

@@ -101,7 +101,8 @@
                         <p class="sale__text">| Сменить личное время - <span>/ptime</span></p>
                         <p class="sale__text">| Открыть верстак - <span>/workbench</span></p>
                         <p class="sale__text">| Открыть эндер-сундук - <span>/ec</span></p>
-                        <button class="detailed__btn">Подробнее о донате</button>
+                        <button class="detailed__btn" id="modalOpen" type="button">Подробнее о донате</button>
+
                         <button class="sale__buy">Купить</button>
                     </li>
                     <li class="sale__card">
@@ -302,19 +303,43 @@
                     <p class="footer-center__prava">© 2025 Dexland Все права защищены.</p>
                 </div>
                 <div class="footer-right">
-                        <ul class="footer-right__list">
-                            <li class="footer-right__link">Главная</li>
-                            <li class="footer-right__link">Правила</li>
-                            <li class="footer-right__link">Как купить донат?</li>
-                            <li class="footer-right__link">Поддержка</li>
-                            <li class="footer-right__link">Новости</li>
-                            <li class="footer-right__link">Топы</li>    
-                        </ul>
-                    </div>
+                    <ul class="footer-right__list">
+                        <li class="footer-right__link">Главная</li>
+                        <li class="footer-right__link">Правила</li>
+                        <li class="footer-right__link">Как купить донат?</li>
+                        <li class="footer-right__link">Поддержка</li>
+                        <li class="footer-right__link">Новости</li>
+                        <li class="footer-right__link">Топы</li>
+                    </ul>
                 </div>
             </div>
         </div>
+        </div>
     </footer>
+    <div class="modal">
+        <h3 class="modal__title">О донате "<span>RANGER</span>"</h3>
+        <ul class="modal__list">
+            <li class="modal__item">
+                | Сменить личное время - <span>/ext</span>
+                | Открыть верстак- <span>/wordbech</span>
+                | Открыть эндер-сундук - <span>/ec</span>
+            </li>
+        </ul>
+
+        <p class="modal__item">>> Получаемая зарплата: <span>100$</span></p>
+        <ul class="modal__list">
+            <li class="modal__item">
+                ^ Слотов на аукционе: <span>10</span>
+                ^ Регионов для привата: <span>10</span>
+                ^ Домов /sethome: <span>5</span>
+            </li>
+        </ul>
+        <p class="modal__sale">Итого: <span>349₽</span></p>
+        <button class="modal__purchase">
+            Хочу купить
+            <img src="images/icons/modalstrelka.svg">
+        </button>
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/range-slider-input@2.4/dist/rangeslider.umd.min.js"></script>
 <script>
