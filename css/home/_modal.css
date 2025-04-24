@@ -1,13 +1,176 @@
-.modal{
+.modal {
     background-color: var(--dark-gray);
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    z-index: 15;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility 0.4s;
+    max-width: 530px;
+    border-radius: 15px;
+    padding-top: 55px;
+    padding-left: 52px;
 }
 
-.modal__title{
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal__title {
     color: #fff;
     font-size: 25px;
     font-weight: 300;
+    margin-bottom: 42px;
+
 }
 
-.modal__title span{
+.modal__title span {
     color: var(--soft-green);
+}
+
+.modal__item {
+    font-weight: 700;
+    color: #fff;
+}
+
+.modal__item span {
+    color: var(--lime-green);
+}
+
+.modal__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.modal__salary {
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 49px;
+}
+
+.modal__salary span {
+    color: var(--lime-green);
+}
+
+.modal__footer{
+    display: flex;
+    gap: 73px;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.modal__sale {
+    font-size: 25px;
+    color: #BABABA;
+}
+
+.modal__sale span {
+    color: #fff;
+}
+
+.modal__purchase {
+    background-color: var(--soft-green);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 28px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.modal__btn{
+    position: absolute;
+    top: 21px;
+    right: 24px;
+}
+
+.modal-sale{
+    background-color: #1E1E1E;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    z-index: 16;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 520px;
+    padding-top: 31px;
+    padding-left: 44px;
+    border-radius: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s, visibility 0.4s;
+}
+
+.modal-sale.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal-sale__buy{
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    margin-bottom: 24px;
+}
+
+.modal-sale__title{
+    font-size: 22px;
+   font-weight: 500;
+   color: #fff;
+}
+
+.modal-sale__title span{
+    color: var(--soft-green);
+}
+
+.modal-sale__name{
+    color: #BABABA;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.modal-sale__box{
+    background-color: var(--dark-gray);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 18px 10px;
+    width: 430px;
+    margin-bottom: 30px;
+}
+
+.modal-sale__footer{
+    display: flex;
+    align-items: center;
+    gap: 88px;
+    margin-bottom: 35px;
+}
+
+.modal-text__sale{
+    font-size: 25px;
+    color: #BABABA;
+}
+
+.modal-text__sale span{
+    color: #fff;
+}
+
+.modal-sale__purchase{
+    background-color: var( --soft-green);
+    color: #fff;
+    padding: 17px 72px;
+    border-radius: 15px;
+    font-size: 18px;
 }

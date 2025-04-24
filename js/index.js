@@ -13,3 +13,44 @@ function copyIP() {
     });
 }
 
+
+const btn = document.getElementById('modalOpen');
+const body = document.body;
+const modal = document.querySelector('.modal');
+const modalCloseBtn = document.querySelector('.modal__btn')
+const modalSale = document.querySelector('.modal-sale');
+const btnSale = document.getElementById('modalOpens');
+
+btn.addEventListener('click', function () {
+    body.classList.add('active');
+    modal.classList.add('active');
+});
+
+btnSale.addEventListener('click', function () {
+    body.classList.add('active');
+    modalSale.classList.add('active');
+});
+
+modalCloseBtn.addEventListener('click', function () {
+    body.classList.remove('active');
+    modal.classList.remove('active');
+});
+
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        body.classList.remove('active');
+        modal.classList.remove('active');
+    }
+});
+
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        body.classList.remove('active');
+        modalSale.classList.remove('active');
+    }
+});
+
+modalCloseBtn.addEventListener('click', function () {
+    body.classList.remove('active');
+    modalSale.classList.remove('active');
+});
