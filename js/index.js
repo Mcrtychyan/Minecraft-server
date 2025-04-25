@@ -17,9 +17,10 @@ function copyIP() {
 const btn = document.getElementById('modalOpen');
 const body = document.body;
 const modal = document.querySelector('.modal');
-const modalCloseBtn = document.querySelector('.modal__btn')
+const modalCloseBtn = document.getElementById('modalBtnAboutDonate');
 const modalSale = document.querySelector('.modal-sale');
 const btnSale = document.getElementById('modalOpens');
+const btnSaleClose = document.getElementById('modalBtnBuyTovar');
 
 btn.addEventListener('click', function () {
     body.classList.add('active');
@@ -50,7 +51,7 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
-modalCloseBtn.addEventListener('click', function () {
+btnSaleClose.addEventListener('click', function () {
     body.classList.remove('active');
     modalSale.classList.remove('active');
 });
