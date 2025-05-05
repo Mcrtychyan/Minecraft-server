@@ -44,7 +44,7 @@
     font-size: 24px;
     color: #fff;
     font-weight: 600;
-    margin-bottom: 22px;
+    margin-bottom: 10px;
 }
 
 .donate__subtext{
@@ -52,6 +52,9 @@
     color: #AEADAD;
 }
 
+
+
 .donate__img{
     margin: 0 auto;
+    margin-bottom: 60px;
 }
