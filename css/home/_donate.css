@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     gap: 55px;
-    justify-content: center;
 }
 
 .donate__title {
@@ -45,11 +44,13 @@
     color: #fff;
     font-weight: 600;
     margin-bottom: 10px;
+    padding-top: 25px;
 }
 
 .donate__subtext{
     font-size: 16px;
     color: #AEADAD;
+    margin-bottom: 25px;
 }
 
 
