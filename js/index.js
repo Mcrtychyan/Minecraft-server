@@ -55,3 +55,4 @@ btnSaleClose.addEventListener('click', function () {
     body.classList.remove('active');
     modalSale.classList.remove('active');
 });
+

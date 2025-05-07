@@ -1,6 +1,7 @@
 .rules__content {
     display: flex;
     gap: 40px;
+    align-items: flex-start;
 }
 
 .rules__container {
@@ -35,4 +36,8 @@
 
 .rules__text{
     max-width: 820px;
+}
+
+.rules__inner{
+    margin-bottom: 125px;
 }
