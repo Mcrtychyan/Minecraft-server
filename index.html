@@ -111,8 +111,8 @@
                         <p class="sale__text">| Сменить личное время - <span>/ptime</span></p>
                         <p class="sale__text">| Открыть верстак - <span>/workbench</span></p>
                         <p class="sale__text">| Открыть эндер-сундук - <span>/ec</span></p>
-                        <button class="detailed__btn">Подробнее о донате</button>
-                        <button class="sale__buy">Купить</button>
+                        <button class="detailed__btn" id="modalOpen" type="button">Подробнее о донате</button>
+                        <button class="sale__buy" id="modalOpens">Купить</button>
                     </li>
                     <li class="sale__card">
                         <h2 class="sale__title">Ranger</h2>
@@ -120,7 +120,7 @@
                         <p class="sale__text">| Сменить личное время - <span>/ptime</span></p>
                         <p class="sale__text">| Открыть верстак - <span>/workbench</span></p>
                         <p class="sale__text">| Открыть эндер-сундук - <span>/ec</span></p>
-                        <button class="detailed__btn">Подробнее о донате</button>
+                        <button class="detailed__btn" id="modalOpen" type="button">Подробнее о донате</button>
                         <button class="sale__buy">Купить</button>
                     </li>
                     <li class="sale__card">
@@ -186,37 +186,59 @@
         <section class="recent-purchases">
             <div class="container">
                 <h1 class="recent-purchases__title">Последние покупки:</h1>
-                <div class="recent__container">
-                    <ul class="recent__list">
-                        <li class="recent__card">
-                            <img class="recent__image" src="images/chel.png">
-                            <p class="recent__name">plushkin007</p>
-                            <p class="recent__privileg">IMMORTAL</p>
-                        </li>
-                        <li class="recent__card">
-                            <img class="recent__image" src="images/chel.png">
-                            <p class="recent__name">plushkin007</p>
-                            <p class="recent__privileg">IMMORTAL</p>
-                        </li>
-                        <li class="recent__card">
-                            <img class="recent__image" src="images/chel.png">
-                            <p class="recent__name">plushkin007</p>
-                            <p class="recent__privileg">IMMORTAL</p>
-                        </li>
-                        <li class="recent__card">
-                            <img class="recent__image" src="images/chel.png">
-                            <p class="recent__name">plushkin007</p>
-                            <p class="recent__privileg">IMMORTAL</p>
-                        </li>
-                        <li class="recent__card">
-                            <img class="recent__image" src="images/chel.png">
-                            <p class="recent__name">plushkin007</p>
-                            <p class="recent__privileg">IMMORTAL</p>
-                        </li>
-                    </ul>
+                <div class="slider-wrapper">
+                    <button class="slider-btn left" onclick="slideLeft()">‹</button>
+
+                    <div class="recent__container">
+                        <ul class="recent__list">
+                            <li class="recent__card">
+                                <img class="recent__image" src="images/chel.png">
+                                <p class="recent__name">plushkin007</p>
+                                <p class="recent__privileg">IMMORTAL</p>
+                            </li>
+                            <li class="recent__card">
+                                <img class="recent__image" src="images/chel.png">
+                                <p class="recent__name">plushkin007</p>
+                                <p class="recent__privileg">IMMORTAL</p>
+                            </li>
+                            <li class="recent__card">
+                                <img class="recent__image" src="images/chel.png">
+                                <p class="recent__name">plushkin007</p>
+                                <p class="recent__privileg">IMMORTAL</p>
+                            </li>
+                            <li class="recent__card">
+                                <img class="recent__image" src="images/chel.png">
+                                <p class="recent__name">plushkin007</p>
+                                <p class="recent__privileg">IMMORTAL</p>
+                            </li>
+                            <li class="recent__card">
+                                <img class="recent__image" src="images/chel.png">
+                                <p class="recent__name">plushkin007</p>
+                                <p class="recent__privileg">IMMORTAL</p>
+                            </li>
+                            <li class="recent__card">
+                                <img class="recent__image" src="images/chel.png">
+                                <p class="recent__name">plushkin123007</p>
+                                <p class="recent__privileg">IMMORTAL</p>
+                            </li>
+                            <li class="recent__card">
+                                <img class="recent__image" src="images/chel.png">
+                                <p class="recent__name">plushkin123007</p>
+                                <p class="recent__privileg">IMMORTAL</p>
+                            </li>
+                            <li class="recent__card">
+                                <img class="recent__image" src="images/chel.png">
+                                <p class="recent__name">plushkin123007</p>
+                                <p class="recent__privileg">IMMORTAL</p>
+                            </li>
+                         </ul>
+                    </div>
+
+                    <button class="slider-btn right" onclick="slideRight()">›</button>
                 </div>
             </div>
         </section>
+
 
         <section class="latest-news">
             <div class="container">
@@ -359,7 +381,7 @@
             <img src="images/icons/delete.svg">
         </button>
         <div class="modal-sale__buy">
-            <img  class="modal-sale__icons" src="images/icons/buy.svg">
+            <img class="modal-sale__icons" src="images/icons/buy.svg">
             <h3 class="modal-sale__title">Покупка товара “<span>IMMORTAL</span>”</h3>
         </div>
         <ul class="modal-sale__list">
@@ -420,5 +442,17 @@
 
 
 <script src="js/index.js"></script>
+
+<script>
+    function slideLeft() {
+        const container = document.querySelector('.recent__container');
+        container.scrollBy({ left: -300, behavior: 'smooth' });
+    }
+
+    function slideRight() {
+        const container = document.querySelector('.recent__container');
+        container.scrollBy({ left: 300, behavior: 'smooth' });
+    }
+</script>
 
 </html>

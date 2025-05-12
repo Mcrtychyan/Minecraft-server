@@ -19,18 +19,29 @@ const body = document.body;
 const modal = document.querySelector('.modal');
 const modalCloseBtn = document.getElementById('modalBtnAboutDonate');
 const modalSale = document.querySelector('.modal-sale');
-const btnSale = document.getElementById('modalOpens');
+const buttonsSale = document.querySelectorAll('.detailed__btn');
 const btnSaleClose = document.getElementById('modalBtnBuyTovar');
-
+const buttonBuy = document.querySelectorAll('.sale__buy');
+ 
 btn.addEventListener('click', function () {
     body.classList.add('active');
     modal.classList.add('active');
 });
 
-btnSale.addEventListener('click', function () {
-    body.classList.add('active');
-    modalSale.classList.add('active');
+buttonsSale.forEach(function(buttonSale) {
+    buttonSale.addEventListener('click', function() {
+        body.classList.add('active');
+        modal.classList.add('active');
+    });
 });
+
+buttonBuy.forEach(function(buttonBuy) {
+    buttonBuy.addEventListener('click', function() {
+        body.classList.add('active');
+        modalSale.classList.add('active');
+    });
+});
+
 
 modalCloseBtn.addEventListener('click', function () {
     body.classList.remove('active');
