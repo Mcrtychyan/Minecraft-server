@@ -169,3 +169,36 @@
         padding: 15px 15px;
     }
 }
+
+@media(max-width: 660px){
+    .sale__filters{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .sale__list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sale__buy{
+      
+    }
+
+    .sale__title{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .sale__text{
+        font-size: 14px;   
+    }
+    
+    .detailed__btn{
+       margin-bottom: 30px;
+    }
+
+    .sale__card{
+        max-width: 350px;
+    }
+}

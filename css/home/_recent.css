@@ -108,3 +108,17 @@
     padding: 12px 16px 24px;
   }
 }
+
+@media (max-width: 468px){
+  .recent-purchases__title{
+    font-size: 30px;
+  }
+
+  .recent__card{
+    padding: 5px 10px 14px;
+  }
+
+  .recent__list{
+    gap: 15px;
+  }
+}

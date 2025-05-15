@@ -184,3 +184,30 @@
     margin-bottom: 40px;
 }
 }
+
+@media(max-width: 468px){
+    .home__title{
+        font-size: 40px;
+    }
+
+    .home__text{
+        font-size: 18px;
+    }
+
+    .online__block--active{
+
+    }
+
+    .online__container{
+        font-size: 14px;
+    }
+
+    .online__text{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .online__num{
+        font-size: 25px;
+    }
+}

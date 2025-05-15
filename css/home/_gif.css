@@ -12,3 +12,9 @@
         margin-bottom: 60px;
     }
 }
+
+@media(max-width: 468px){
+    .gif{
+        margin-bottom: 20px;
+    }
+}

@@ -178,3 +178,31 @@
         margin-bottom: 60px;
     }
 }
+
+@media (max-width: 660px){
+    .coins__content{
+        padding: 10px 15px;
+    }
+
+    .coins__title{
+        font-size: 18px;
+    }
+
+    .coins__subtitle{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 468px) {
+    .coins__money{
+        width: 60px;
+    }
+
+    .coins__title{
+        padding-top: 10px;
+    }
+
+    .coins__subtitle{
+        margin-bottom: 12px;
+    }
+}
