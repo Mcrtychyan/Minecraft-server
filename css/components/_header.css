@@ -4,14 +4,16 @@
     margin-bottom: 80px;
 }
 
+.header__logo {}
+
 .header--main {
     margin-bottom: 0;
 }
 
 .header__inner {
     display: flex;
-    gap: 180px;
-    justify-content: center;
+    gap: 40px;
+    justify-content: space-between;
 
 }
 
@@ -20,6 +22,7 @@
     max-width: 140px;
     width: 100%;
 }
+
 
 .header__nav {
     display: flex;
@@ -56,3 +59,133 @@
 .header__link:active {
     color: #fff;
 }
+
+@media (max-width: 1200px) {
+    .header__logo {
+        width: 130px;
+        height: 40px;
+    }
+
+    .header__link {
+        color: #AEADAD;
+        border: 2px solid transparent;
+        border-radius: 2px;
+        transition: .4s, border .4s;
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    .header__list {}
+}
+
+.menu{
+    display: none;
+}
+@media (max-width: 960px){
+    .header__inner{
+        justify-content: space-between;
+    }
+
+    .header__text {
+        display: none;
+    }
+
+    .header__list{
+        display: none;
+    }
+    .menu {
+        position: fixed;
+        z-index: 10;
+        background-color: var(--soft-green);
+        display: block;
+        pointer-events: none;
+        user-select: none;
+        transform: translateX(100%);
+        overflow: hidden;
+        transition: transform .6s;
+        padding-top: 20px;
+        width: 250px;
+        height: auto;
+        border-radius: 10px;
+        right: 0;
+    }
+
+    .menu--open {
+        transform: translateX(0);
+        user-select: auto;
+        pointer-events: auto;
+    }
+
+    .menu__list {
+        font-size: 18px;
+        display: flex;
+        list-style-type: none;
+        color: var(--dark-gray);
+        text-decoration: none;
+    }
+
+    .menu__title {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .menu__content {
+        font-size: 20px;
+        list-style-type: none;
+        color: brown;
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu__btn {
+        display: block;
+        background-color: #fff;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .menu__btn span,
+    .menu__btn span::before,
+    .menu__btn span::after {
+        position: absolute;
+        height: 3px;
+        margin-top: -2px;
+        width: 22px;
+        left: 0;
+        top: 50%;
+        transform: translateX(55%);
+        background-color: #222;
+    }
+
+    .menu__btn span::before,
+    .menu__btn span::after {
+        content: '';
+        transition: transform .3s;
+    }
+
+    .menu__btn span::before {
+        transform: translateY(-10px);
+    }
+
+    .menu__btn span::after {
+        transform: translateY(10px);
+    }
+
+    .menu__btn_active span::before {
+        transform: rotate(45deg);
+    }
+
+    .menu__btn_active span::after {
+        transform: rotate(-45deg);
+    }
+
+    .menu__btn_active span {
+        height: 0;
+    }
+}   

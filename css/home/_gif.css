@@ -6,3 +6,9 @@
 .gif{
     margin-bottom: 80px;
 }
+
+@media (max-width: 960px){
+    .gif{
+        margin-bottom: 60px;
+    }
+}

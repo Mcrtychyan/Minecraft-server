@@ -78,7 +78,7 @@
     transition: 0.5s;
 }
 
-.coins__buy:hover{
+.coins__buy:hover {
     background-color: var(--Medium-dark-gray);
 }
 
@@ -91,6 +91,90 @@
     color: #707070;
 }
 
-.coins{
+.coins {
     margin-bottom: 120px;
+}
+
+@media (max-width: 1140px) {
+    .coins__content {
+        flex-direction: column;
+        padding: 30px 25px;
+        align-items: center;
+        max-width: 660px;
+        margin: 0 auto;
+    }
+
+    .coins__money {
+        width: 130px;
+        height: auto;
+        padding: 0;
+    }
+
+    .coins__right {
+        margin: 0 auto;
+        display: flex;
+        padding: 18px 28px;
+        max-width: none;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .coins__buy {
+        max-width: 250px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .coins__info {
+        font-size: 12px;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 960px) {
+    .coins {
+        margin-bottom: 75px;
+    }
+
+    .coins__content {
+        max-width: 560px;
+    }
+
+    .coins__money {
+        width: 100px;
+    }
+
+    .coins__title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .coins__subtitle {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .coins__salebuy {
+        padding: 15px 50px;
+        align-items: center;
+    }
+
+    .coins__coins {
+        justify-content: center;
+        padding-bottom: 13px;
+    }
+
+    .coins__buy {
+        padding: 12px 24px;
+    }
+
+    .coins__content {
+        padding: 16px 20px;
+    }
+}
+
+@media (max-width: 860px){
+    .coins{
+        margin-bottom: 60px;
+    }
 }
