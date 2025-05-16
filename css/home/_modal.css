@@ -174,3 +174,80 @@
     border-radius: 15px;
     font-size: 18px;
 }
+
+@media (max-width: 660px){
+    .modal-sale__title{
+        font-size: 18px;
+    }
+
+    .modal-sale__box{
+        width: 250px;
+    }
+
+    .modal-sale__item{
+      display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal-sale__buy{
+        gap: 22px;
+    }
+
+    .modal-sale__footer{
+        gap: 40px;
+    }
+
+    .modal-sale{
+        max-width: 400px;
+        padding: 30px 30px;
+    }
+
+    .modal-text__sale{
+        font-size: 22px;
+    }
+
+    .modal-sale__purchase{
+        padding: 12px 52px;
+    }
+
+    .modal-sale__footer{
+        margin-bottom: 20px;
+    }
+
+    .modal__title{
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .modal__item{
+        font-size: 16px;
+    }
+
+    .modal__list{
+        gap: 8px;
+    }
+
+    .modal__sale{
+        font-size: 20px;
+    }
+
+    .modal__purchase{
+        padding: 8px 11px;
+    }
+
+    .modal{
+        max-width: 400px;
+       
+    }
+
+    .modal__salary{
+        margin-bottom: 25px;
+    }
+
+    .modal__footer{
+        gap: 40px;
+    }
+}
+
