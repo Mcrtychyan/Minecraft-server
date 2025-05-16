@@ -86,11 +86,27 @@ padding: 0;
 }
 
 @media(max-width: 468px){
+
+    .latest-news__title{
+margin-bottom: 25px;
+    }
+
 .latest-news{
     margin-bottom: 40px;
 }
 
     .latest-news__title{
         font-size: 30px;
+    }
+}
+
+@media(max-width: 360px){
+    .latest__list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .latest__image{
+      
     }
 }

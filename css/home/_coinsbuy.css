@@ -193,6 +193,21 @@
     }
 }
 
+@media (max-width: 530px){
+    .coins__right{
+        flex-direction: column;
+    }
+
+    .coins__buy{
+        padding: 10px 20px;
+        margin-bottom: 0px;
+    }
+
+    .coins__info{
+        text-align: center;
+    }
+}
+
 @media(max-width: 468px) {
     .coins__money{
         width: 60px;
@@ -204,5 +219,16 @@
 
     .coins__subtitle{
         margin-bottom: 12px;
+    }
+}
+
+@media(max-width: 360px) {
+    .coins__coins{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .coins__info{
+        text-align: center;
     }
 }

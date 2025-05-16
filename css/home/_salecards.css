@@ -202,3 +202,19 @@
         max-width: 350px;
     }
 }
+
+@media  (max-width: 360px){
+    .sale__list{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 19px 20px; 
+    }
+
+    .sale__btn{
+        padding: 10px 30px;
+    }
+
+    .sale__filters{
+        margin-bottom: 15px;
+    }
+}
