@@ -45,9 +45,9 @@
 }
 
 .sale__card {
-    padding: 30px 30px 25px;
-    border-radius: 10px;
-    background-color: var(--dark-gray);
+        padding: 30px 30px 25px;
+        border-radius: 10px;
+        background-color: var(--dark-gray);
 }
 
 .sale__title {
