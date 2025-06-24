@@ -203,11 +203,12 @@
     }
 }
 
-@media  (max-width: 360px){
+@media  (max-width: 460px){
     .sale__list{
         display: flex;
         flex-direction: column;
         grid-gap: 19px 20px; 
+        align-items: center;
     }
 
     .sale__btn{
@@ -216,5 +217,9 @@
 
     .sale__filters{
         margin-bottom: 15px;
+    }
+
+    .sale__card{
+        width: 285px;
     }
 }
